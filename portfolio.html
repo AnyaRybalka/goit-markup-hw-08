@@ -22,6 +22,11 @@
         <a href="./index.html" class="logo"
           ><span class="logo--accent">Web</span>Studio</a
         >
+        <button type="button" class="menu-toggle js-open-menu" data-menu-button aria-expanded="false">
+          <svg class="menu-toggle__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="menu-button__open" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav>
           <ul class="list site-nav">
             <li class="site-nav__item">
@@ -55,6 +60,47 @@
           </li>
         </ul>
       </div>
+      <!--Мобільне меню-->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-toggle__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="menu-button__cross" href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link mobile-menu__link">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link--current">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="contacts-menu">
+          <li class="contacts-menu__item">
+            <a href="tel:+380961111111" class="contacts-menu__tel"> +38 096 111 11 11 </a>
+          </li>
+          <li class="contacts-menu__item">
+            <a href="mailto:info@devstudio.com" class="contacts-menu__mail"> info@devstudio.com </a>
+          </li>
+        </ul>
+        <ul class="social-menu">
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link">Instagram</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link">Twitter</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link">Facebook</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="projects-section">
@@ -83,13 +129,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/technokriak.jpg"
+                  <picture>
+                    <source srcset="./images/gallery1-desktop.jpg 1x, ./images/gallery1-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery1-tablet.jpg 1x, ./images/gallery1-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery1-mobile.jpg 1x, ./images/gallery1-mobile@2.jpg 2x"
+                    src="./images/gallery1-mobile.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -105,13 +154,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/poster.jpg"
+                  <picture>
+                    <source srcset="./images/gallery2-desktop.jpg 1x, ./images/gallery2-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery2-tablet.jpg 1x, ./images/gallery2-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery2-mobile.jpg 1x, ./images/gallery2-mobile@2.jpg 2x"
+                    src="./images/gallery2-mobile.jpg"
                     alt="New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -129,13 +181,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/restaurant.jpg"
+                 <picture>
+                    <source srcset="./images/gallery3-desktop.jpg 1x, ./images/gallery3-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery3-tablet.jpg 1x, ./images/gallery3-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery3-mobile.jpg 1x, ./images/gallery3-mobile@2.jpg 2x"
+                    src="./images/gallery3-mobile.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -151,13 +206,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/prime.jpg"
+                  <picture>
+                    <source srcset="./images/gallery4-desktop.jpg 1x, ./images/gallery4-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery4-tablet.jpg 1x, ./images/gallery4-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery4-mobile.jpg 1x, ./images/gallery4-mobile@2.jpg 2x"
+                    src="./images/gallery4-mobile.jpg"
                     alt="Проєкт Prime"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -173,13 +231,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/boxes.jpg"
+                  <picture>
+                    <source srcset="./images/gallery5-desktop.jpg 1x, ./images/gallery5-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery5-tablet.jpg 1x, ./images/gallery5-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery5-mobile.jpg 1x, ./images/gallery5-mobile@2.jpg 2x"
+                    src="./images/gallery5-mobile.jpg"
                     alt="Проєкт Boxes"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -195,13 +256,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/inspiration.jpg"
+                  <picture>
+                    <source srcset="./images/gallery6-desktop.jpg 1x, ./images/gallery6-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery6-tablet.jpg 1x, ./images/gallery6-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery6-mobile.jpg 1x, ./images/gallery6-mobile@2.jpg 2x"
+                    src="./images/gallery6-mobile.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -217,13 +281,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/limited.jpg"
+                  <picture>
+                    <source srcset="./images/gallery7-desktop.jpg 1x, ./images/gallery7-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery7-tablet.jpg 1x, ./images/gallery7-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery7-mobile.jpg 1x, ./images/gallery7-mobile@2.jpg 2x"
+                    src="./images/gallery7-mobile.jpg"
                     alt="Видання Limited Edition"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -239,13 +306,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/lab.jpg"
+                  <picture>
+                    <source srcset="./images/gallery8-desktop.jpg 1x, ./images/gallery8-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery8-tablet.jpg 1x, ./images/gallery8-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery8-mobile.jpg 1x, ./images/gallery8-mobile@2.jpg 2x"
+                    src="./images/gallery8-mobile.jpg"
                     alt="Проєкт LAB"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -261,13 +331,16 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/growing.jpg"
+                  <picture>
+                    <source srcset="./images/gallery9-desktop.jpg 1x, ./images/gallery9-desktop@2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/gallery9-tablet.jpg 1x, ./images/gallery9-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img
+                   srcset="./images/gallery9-mobile.jpg 1x, ./images/gallery9-mobile@2.jpg 2x"
+                    src="./images/gallery9-mobile.jpg"
                     alt="Growing Business"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
+                  </picture>
                   <p class="projects__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -371,5 +444,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
