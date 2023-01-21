@@ -128,7 +128,7 @@
         font-size: 24px;
         line-height: 1.18;
         letter-spacing: 0.02em;
-        color: $accentColor;
+        color: $secondaryColor;
         text-decoration: none;
 
         &:hover,
@@ -153,6 +153,9 @@
         &:focus {
             color: $accentColor;
         }
+                @media screen and (min-width:459px) {
+                    font-size: 34px;
+                }
     }
 }
 
